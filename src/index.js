@@ -97,9 +97,9 @@ svgXClose.addEventListener("click", closeNav)
 //  MAIN
 //////////////////////////////////////////////////////////////////////////////
 
-// registerServiceWorker()
+registerServiceWorker()
 
-divFoot01.innerHTML = "Hi ya"
+divFoot01.innerHTML = "Hi big boy!"
 let d = new Date()
 console.log(d)
 

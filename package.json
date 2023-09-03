@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "copy": "cp dist/* docs/ -r"
+    "upload": "rm -fr docs/* ; cp dist/* docs/ -r ; gitpushall",
     "build": "webpack --mode production"
   },
   "keywords": [],
