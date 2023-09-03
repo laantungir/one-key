@@ -4,24 +4,26 @@
 <head>
   <meta charset="utf-8">
   <title>Hello World</title>
-  <link rel="stylesheet" href="/index.9d0406d4.css">
+  <link rel="stylesheet" href="css/pad.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="manifest" href="/manifest.webmanifest">
-  <meta name="theme-color" content="white">
-  <link rel="icon" type="image/svg+xml" href="/home.29eb6339.svg" sizes="any">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="white"/>
+  <link rel="icon" type="image/svg+xml" href="home.svg" sizes="any">
 
-  <style media="screen">#divBody {
-  flex-wrap: wrap;
-  display: flex;
-}
+  <style media="screen">
 
-</style>
+    #divBody{
+      display:flex;
+      flex-wrap: wrap;
+    }
+      
+    </style>
 
 </head>
 
 
 
-<body>
+<body >
 
 <!--
 ################################################################################
@@ -37,8 +39,8 @@
     <div id="divHeaderFlexLeft">
 
       <div id="divSvgHam" class="divHeaderButtons">
-        <svg id="svgHam" class="svgHeaderButtons" viewbox="0 0 10 10">
-          <path id="svgHamPath" d="M2,2 L8,2 M2,5 L8,5 M2,8 L8,8"></path>
+        <svg id="svgHam" class="svgHeaderButtons" viewBox="0 0 10 10">
+          <path id="svgHamPath" d="M2,2 L8,2 M2,5 L8,5 M2,8 L8,8"/>
         </svg>
       </div>
 
@@ -99,9 +101,9 @@
   <div id="divSideNav">
     <div id="divSideNavHeader">
       <!-- X -->
-      <div class="divHeaderButtons">
-        <svg id="svgXClose" class="svgHeaderButtons" viewbox="0 0 10 10">
-          <path id="svgXClosePath" d="M2,2 L2,8 M5,2 L5,8 M8,2 L8,8"></path>
+      <div  class="divHeaderButtons">
+        <svg id="svgXClose" class="svgHeaderButtons" viewBox="0 0 10 10">
+          <path id="svgXClosePath" d="M2,2 L2,8 M5,2 L5,8 M8,2 L8,8"/>
         </svg>
       </div>
     </div>
@@ -111,7 +113,7 @@
 
   </div>
 
-<script src="/index.a4c1dfb7.js" defer=""></script>
+<script type="module" src="main.mjs"></script>
 
 </body>
-</body></html>
+</html>
