@@ -578,9 +578,11 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 //     boolIsValidWords, 
 //     objNostrKeys,
 //     objCoinKeys } from "@laantungir/nostr-keys"
+// import { ToggleFullScreen } from "@laantungir/utilities"
+// import QRCode from "qrcode-svg"
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _utilities = require("@laantungir/utilities");
-var _qrcodeSvg = require("qrcode-svg");
+var _utilities = require("/node_modules/@laantungir/utilities");
+var _qrcodeSvg = require("/node_modules/qrcode-svg");
 var _qrcodeSvgDefault = parcelHelpers.interopDefault(_qrcodeSvg);
 async function registerServiceWorker() {
     const serviceWorkerUrl = new URL(require("b737d5178e56e7b4"));
@@ -652,7 +654,7 @@ var svg = new (0, _qrcodeSvgDefault.default)({
 console.log(svg);
 divBody.innerHTML = svg;
 
-},{"b737d5178e56e7b4":"divNp","@laantungir/utilities":"kFq1R","qrcode-svg":"2k17G","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"divNp":[function(require,module,exports) {
+},{"b737d5178e56e7b4":"divNp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/node_modules/@laantungir/utilities":"kFq1R","/node_modules/qrcode-svg":"2k17G"}],"divNp":[function(require,module,exports) {
 module.exports = require("36664c6fa24901d1").getBundleURL("goGnM") + "sw.d714839d.js" + "?" + Date.now();
 
 },{"36664c6fa24901d1":"lgJ39"}],"lgJ39":[function(require,module,exports) {
@@ -689,6 +691,36 @@ function getOrigin(url) {
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
+
+},{}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
 
 },{}],"kFq1R":[function(require,module,exports) {
 //  ██    ██ ████████ ██ ██      ██ ████████ ██ ███████ ███████ 
@@ -2384,37 +2416,7 @@ const arrNostrStandardizedTags = [
     ]
 ];
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"2k17G":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2k17G":[function(require,module,exports) {
 /**
  * @fileoverview
  * - modified davidshimjs/qrcodejs library for use in node.js

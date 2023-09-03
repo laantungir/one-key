@@ -4,7 +4,8 @@
   "main": "./src/js/index.js",
   "scripts": {
     "dev": "parcel src/index.html --https --cert ./ssl/localhost+1.pem --key ./ssl/localhost+1-key.pem",
-    "build": "parcel src/html/build index.html"
+    "build": "parcel src/html/build index.html",
+    "copy": "rm docs/* -r; cp src/* docs/ -r"
   },
   "keywords": [],
   "author": "Laan Tungir",

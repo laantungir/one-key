@@ -6,9 +6,12 @@
 //     objNostrKeys,
 //     objCoinKeys } from "@laantungir/nostr-keys"
 
-import { ToggleFullScreen } from "@laantungir/utilities"
+// import { ToggleFullScreen } from "@laantungir/utilities"
+// import QRCode from "qrcode-svg"
 
-import QRCode from "qrcode-svg"
+
+import { ToggleFullScreen } from "/node_modules/@laantungir/utilities"
+import QRCode from "/node_modules/qrcode-svg"
 
 
 
