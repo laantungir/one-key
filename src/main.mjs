@@ -10,8 +10,8 @@
 // import QRCode from "qrcode-svg"
 
 
-import { ToggleFullScreen } from "/node_modules/@laantungir/utilities"
-import QRCode from "/node_modules/qrcode-svg"
+// import { ToggleFullScreen } from "/node_modules/@laantungir/utilities"
+// import QRCode from "/node_modules/qrcode-svg"
 
 
 
@@ -101,18 +101,20 @@ svgXClose.addEventListener("click", closeNav)
 // registerServiceWorker()
 
 divFoot01.innerHTML = "Hi ya"
+let d = new Date()
+console.log(d)
 
 
 
-var svg = new QRCode({
+// var svg = new QRCode({
 
-    content: "Pretty Fox",
-    join: true,
-    predefined: false,
-    container: "svg-viewbox"
+//     content: "Pretty Fox",
+//     join: true,
+//     predefined: false,
+//     container: "svg-viewbox"
 
-  }).svg()
+//   }).svg()
 
-console.log(svg)
-divBody.innerHTML = svg
+// console.log(svg)
+// divBody.innerHTML = svg
 

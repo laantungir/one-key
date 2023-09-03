@@ -1,11 +1,12 @@
 {
   "name": "one-key",
   "version": "1.0.0",
-  "main": "./src/js/index.js",
+  "source": "src/index.html",
   "scripts": {
     "dev": "parcel src/index.html --https --cert ./ssl/localhost+1.pem --key ./ssl/localhost+1-key.pem",
-    "build": "parcel src/html/build index.html",
-    "copy": "rm docs/* -r; cp src/* docs/ -r"
+    "build": "parcel build src/index.html",
+    "copysrc": "rm docs/* -r; cp src/* docs/ -r",
+    "copydist": "rm docs/* -r; cp dist/* docs/ -r"
   },
   "keywords": [],
   "author": "Laan Tungir",
@@ -13,17 +14,8 @@
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.9.3",
     "@parcel/transformer-webmanifest": "^2.9.3",
-    "assert": "^2.0.0",
-    "crypto-browserify": "^3.12.0",
-    "events": "^3.3.0",
     "parcel": "^2.9.3",
-    "process": "^0.11.10",
-    "stream-browserify": "^3.0.0",
-    "url": "^0.11.1"
+    "htmlnano": "2.0.3"
   },
-  "description": "",
-  "dependencies": {
-    "@laantungir/utilities": "^1.1.0",
-    "qrcode-svg": "^1.1.0"
-  }
+  "description": ""
 }
