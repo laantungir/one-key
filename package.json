@@ -1,13 +1,13 @@
 {
-  "name": "@laantungir/one-key",
+  "name": "one-key",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/main.mjs",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "Laan Tungir",
@@ -15,5 +15,8 @@
   "devDependencies": {
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "qrcode-svg": "^1.1.0"
   }
 }

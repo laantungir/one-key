@@ -1,13 +1,12 @@
 
 
-
 // import { strGenerateSeedWords, 
 //     boolIsValidWords, 
 //     objNostrKeys,
 //     objCoinKeys } from "@laantungir/nostr-keys"
 
 // import { ToggleFullScreen } from "@laantungir/utilities"
-// import QRCode from "qrcode-svg"
+import QRCode from "qrcode-svg"
 
 
 // import { ToggleFullScreen } from "/node_modules/@laantungir/utilities"
@@ -106,15 +105,15 @@ console.log(d)
 
 
 
-// var svg = new QRCode({
+var svg = new QRCode({
 
-//     content: "Pretty Fox",
-//     join: true,
-//     predefined: false,
-//     container: "svg-viewbox"
+    content: "Pretty Fox",
+    join: true,
+    predefined: false,
+    container: "svg-viewbox"
 
-//   }).svg()
+  }).svg()
 
 // console.log(svg)
-// divBody.innerHTML = svg
+divBody.innerHTML = svg
 
