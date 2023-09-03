@@ -1,24 +1,19 @@
 {
-  "name": "one-key",
+  "name": "@laantungir/one-key",
   "version": "1.0.0",
-  "source": "src/index.html",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
-    "dev": "parcel src/index.html --https --cert ./ssl/localhost+1.pem --key ./ssl/localhost+1-key.pem",
-    "build": "parcel build src/index.html",
-    "copysrc": "rm docs/* -r; cp src/* docs/ -r",
-    "copydist": "rm docs/* -r; cp dist/* docs/ -r"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Laan Tungir",
   "license": "ISC",
   "devDependencies": {
-    "@parcel/packager-raw-url": "^2.9.3",
-    "@parcel/transformer-webmanifest": "^2.9.3",
-    "htmlnano": "2.0.3",
-    "parcel": "^2.9.3"
-  },
-  "description": "",
-  "dependencies": {
-    "qrcode-svg": "^1.1.0"
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
   }
 }
