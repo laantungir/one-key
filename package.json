@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev" : "parcel src/index.html",
-    "build" : "parcel src/build index.html"
+    "dev" : "parcel src/html/index.html",
+    "build" : "parcel src/html/build index.html"
   },
   "keywords": [],
   "author": "Laan Tungir",
