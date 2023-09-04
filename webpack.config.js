@@ -1,7 +1,7 @@
 // Generated using webpack-cli https://github.com/webpack/webpack-cli
 
 const path = require('path');
-const source = path.resolve(__dirname, 'src')
+// const source = path.resolve(__dirname, 'src')
 
 
 const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
