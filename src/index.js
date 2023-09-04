@@ -6,8 +6,12 @@
 //     objCoinKeys } from "@laantungir/nostr-keys"
 
 // import { ToggleFullScreen } from "@laantungir/utilities"
+
 import QRCode from "qrcode-svg"
 
+
+import { strGenerateSeedWords } from "../node_modules/nostr-keys"
+// import { generateSeedWords } from "nostr-tools/lib/nip06";
 
 // import { ToggleFullScreen } from "/node_modules/@laantungir/utilities"
 // import QRCode from "/node_modules/qrcode-svg"
@@ -97,13 +101,13 @@ svgXClose.addEventListener("click", closeNav)
 //  MAIN
 //////////////////////////////////////////////////////////////////////////////
 
-registerServiceWorker()
-
-divFoot01.innerHTML = "Hi big boy!"
-let d = new Date()
-console.log(d)
+// registerServiceWorker()
 
 
+// let SW = generateSeedWords()
+// console.log(SW)
+
+// let svg = "shoop"
 
 var svg = new QRCode({
 

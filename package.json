@@ -1,23 +1,36 @@
 {
-  "name": "one-key",
+  "name": "my-webpack-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "My webpack project",
   "main": "src/main.mjs",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "upload": "rm -fr docs/* ; cp dist/* docs/ -r ; gitpushall",
-    "build": "webpack --mode production"
+    "upload": "rm -fr docs/* ; cp dist/* docs/ -r ",
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch"
   },
   "keywords": [],
   "author": "Laan Tungir",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.22.11",
+    "@babel/preset-env": "^7.22.14",
+    "@webpack-cli/generators": "^3.0.7",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
     "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "workbox-webpack-plugin": "^7.0.0"
   },
   "dependencies": {
+    "crypto-browserify": "^3.12.0",
+    "node-polyfill-webpack-plugin": "^2.0.1",
+    "nostr-keys": "^1.1.0",
     "qrcode-svg": "^1.1.0"
   }
 }
